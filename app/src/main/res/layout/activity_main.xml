@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradbackground"
+    tools:context="ai.thanasakis.uda.physicsquiz.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewQuestionType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/left_right_margin"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/medium2_text" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        style="@style/button1"
+        android:layout_alignEnd="@+id/LayoutCheck"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/LayoutCheck"
+        android:onClick="onClicκNext"
+        android:text="@string/next" />
+
+    <TextView
+        android:id="@+id/textQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewQuestionType"
+        android:layout_margin="@dimen/left_right_margin"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/large_text"/>
+
+    <LinearLayout
+        android:id="@+id/LayoutCheck"
+        style="@style/LinearLayoutStyle"
+        android:layout_below="@+id/textQuestion"
+        android:layout_margin="@dimen/left_right_margin">
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            style="@style/checkradiobox"
+            android:tag="a" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            style="@style/checkradiobox"
+            android:tag="b" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            style="@style/checkradiobox"
+            android:tag="c" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            style="@style/checkradiobox"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:tag="d" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutEdit"
+        style="@style/LinearLayoutStyle"
+        android:layout_below="@+id/textQuestion">
+
+        <EditText
+            android:id="@+id/EditAnswer"
+            style="@style/edittextbox"
+            android:hint="@string/hint"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutRadio"
+            style="@style/LinearLayoutStyle"
+            android:layout_below="@+id/textQuestion">
+
+            <RadioGroup
+                android:id="@+id/QuestionRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    style="@style/checkradiobox" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    style="@style/checkradiobox" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    style="@style/checkradiobox" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    style="@style/checkradiobox"
+                    android:layout_marginBottom="@dimen/medium_margin" />
+
+            </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

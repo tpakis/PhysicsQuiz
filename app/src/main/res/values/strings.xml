@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Physics Quiz</string>
+    <string name="truefalse">True or False?</string>
+    <string name="multiple">Choose the correct ones:</string>
+    <string name="quad">Which one is correct?</string>
+    <string name="next">Next</string>
+    <string name="done">Done</string>
+    <string name="hint">Write one word</string>
+    <string name="results">Results</string>
+    <string name="restart">Restart</string>
+
+</resources>
