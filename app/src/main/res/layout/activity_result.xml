@@ -31,6 +31,7 @@
             android:layout_below="@+id/tvAnsweredInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:isIndicator="true"
             android:layout_centerHorizontal="true"/>
 
         <TextView
@@ -40,7 +41,7 @@
             android:layout_weight="0.08" />
 
 
-1
+
     </RelativeLayout>
 
 
